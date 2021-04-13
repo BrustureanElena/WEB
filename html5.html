@@ -1,0 +1,312 @@
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
+<!DOCTYPE HTML>
+<html lang="ro">
+	<head>
+
+
+	<title>Cabinet Stomalogic</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+		<body >
+		
+		<!-- <form action="" method="POST"> -->
+		<form  method="POST"> 
+			<!-- <table  border="1" cellpadding="10" cellspacing="0" width="1500" >   -->
+			
+		 <table   > 
+			<!-- <tr align="center" valign="top"> -->
+			<tr  >
+			 <!-- <th colspan="5" align="center" valign="top"><h3>FORMULAR AL PACIENTELUI LA CABINETUL STOMATOLOGIC ÎN PERIOADA COVID-19</h3>  -->
+				 <td  ><h2>FORMULAR AL PACIENTULUI LA CABINETUL STOMATOLOGIC ÎN PERIOADA COVID-19</h2><br>
+				<img src="https://i.pinimg.com/564x/25/c4/98/25c498b051e3c8028187aa0c8a98f8dd.jpg" alt="photo" title="tooth" width="70" >
+				<img src="https://i.pinimg.com/564x/1d/17/d9/1d17d93f4bdfa86e6331e3514e1dd88e.jpg" alt="photo"
+		title="tooth" width="70" height="70">
+		<img src="https://i.pinimg.com/564x/c3/8a/c4/c38ac4754847583cdac5b2e2372e067c.jpg" alt="photo"
+		title="tooth" width="70" height="70">	
+		<img src="https://i.pinimg.com/564x/6b/d1/b6/6bd1b69b67a06d7cab193e4395d74fdb.jpg" alt="photo"
+		title="tooth" width="70" height="70">
+		
+			
+				<!-- <table border="1" cellpadding="10" cellspacing="0" width="900" >   bordura la tabel si spatiere in celula, cellspacing spatiere intre borduri -->
+					
+
+					 <table  > 
+					<tr  >
+						<!-- <th colspan="5" align="center" valign="top" >DATE PERSONALE DESPRE PACIENT</th> -->
+						<td colspan="5"  ><h2>DATE PERSONALE DESPRE PACIENT </h2></td>
+					
+				
+					
+					</tr>	
+					
+					
+					<tr >
+					
+						<td  >Nume:<input type="text" name="numePacient" maxlength="20"></td>
+						<td >Prenume:<input type="text" name="prenumePacient" maxlength="20"></td>
+						<td >CNP:<input type="number" name="cnp" ></td>
+						<td >Seria:<input type="text" name="seria" maxlength="2" value="SX" readonly> </td>
+						<td >Număr CI:<input type="number" name="Numar" ></td>
+						
+				
+				
+					</tr>			
+					<tr>
+						<td colspan="2">Domiciliu:str. și nr. <input type="text" name="domiciliustrsinr" maxlength="20"></td>
+						<td>Localitate:<input type="text" name="localitate" maxlength="20"><br></td>
+						<td>Județ:<input type="text" name="judet" maxlength="20"><br></td>
+						<td>Cod poștal:<input type="number" name="cod postal" ><br></td>
+					</tr>	
+					<tr>
+						<td colspan="2">Telefon fix:<input type="number" name="telefonFix" ><br></td>
+						<td colspan="3">Email:<input type="email" name="email" maxlength="20"><br></td>
+		
+					</tr>
+					<tr>
+						<td colspan="2">Medic de familie:<input type="text" name="medic de familie"><br></td>
+						<td colspan="2">Centrul de care aparțineți:<input type="text" name="centru" ></td>
+					
+
+						<td>Vârsta:<input type="number" name="varsta"  min="0" max="200" ><br></td>
+						
+					</tr>
+					<tr>
+						<td colspan="5">Nume întreținător legal dacă este cazul:<input type="text" name="numeIntretinator" maxlength="20"
+												value="Nu este cazul" disabled><br></td>
+					
+						
+					
+						
+					</tr>
+				   <tr>
+				   <td colspan="5">Telefon mobil:	<input type="number" name="telefonMobil" step="2" > 
+												<br></td>
+													
+				   </tr>
+					<tr>
+						<!-- <td align="left" colspan ="5" > -->
+						<td  colspan ="5" >
+							
+						Este posibil sa fiți însărcinată?:                                                            
+						<input type="radio" name="ins" value="0">da
+						<input type="radio" name="ins" value="1">nu<br>
+						Ați mai consultat vreun medic stomatolog?:                                                            
+						<input type="radio" name="med" value="0">da
+						<input type="radio" name="med" value="1">nu<br>
+						Ați mai avut avut intervenții chirurgicale ?:                                                            
+						<input type="radio" name="int" value="0">da
+						<input type="radio" name="int" value="1">nu<br>
+						Număr intervenții chirurgicale în ultimul an:<br>
+						<select name="interventiiChirurgicale" multiple >
+							<option value="1"> 1</option>
+							<option value="2"> 2</option>
+							<option value="3"> 3</option>
+							<option value="4"> 4</option>
+							<option value="5"> 5</option>
+							<option value="6"> 6</option>
+							<option value="7"> 7</option>
+							</select><br>
+						Ați mai avut avut anestezii ?:                                                            
+						<input type="radio" name="anestezie" value="0">da
+						<input type="radio" name="anestezie" value="1">nu<br>
+						Ce tip de anestezii ?:                                                            
+						<input type="radio" name="anestezieTip" value="0">locala
+						<input type="radio" name="anestezieTip" value="1">totala<br>
+						Sunteți alergici la anumite substanțe, dacă da,la ce substanțe?:<br>
+						<textarea rows="5" name= "alergii" cols="40">
+						</textarea><br>
+						Reacții adverse după tratamentele stomatologice:
+						<ul>
+						<li> <input type="checkbox" name="dureriDentare" value="1">dureri dentare </li>
+						<li><input type="checkbox" name="dureriDeCap" value="1">dureri de cap </li>
+						<li><input type="checkbox" name="cadereaDintilor" value="1">căderea dintilor</li>
+						<li><input type="checkbox" name="cadereaPlombelor" value="1">căderea plombelor</li>
+						<li><input type="checkbox" name="febra" value="1">febră</li>
+						<li><input type="checkbox" name="insomnii" value="1">insomnii</li>
+						<li><input type="checkbox" name="niciunaDinCeleMentionateMaiSus" value="1">niciuna din cele menționate mai sus</li>
+						</ul>
+					
+						</td>
+							
+					</tr>
+					
+				
+					</table>
+				
+			
+				</td> 
+				
+		
+			</tr>	
+			
+			
+			
+
+			
+			<tr>
+				<td   >
+				
+					<table  > 
+				
+				
+					<tr  >
+				<th   >INFORMAȚII PRIVIND STAREA PACIENTULUI IN PERIOADA SARS COV-2
+					<img src="https://www.alexnecula.ro/sites/default/files/inline-images/zana%20maseluta-min.jpg" alt="photo"
+		title="tooth" width="70" height="70"></th>
+			
+			</tr>	
+			<tr>
+				<td  > 
+				<p>
+				
+				<strong>Măsurile recomandate pentru prevenirea infecției</strong> depind de probabilitatea ca o persoană să intre în contact cu boala.<strong>Centrul pentru Prevenirea</strong> și Controlul Bolilor din SUA
+				</p>recomandă evitarea expunerii.<div> O serie de țări au sfătuit evitarea călătoriilor în China, provincia Hubei, sau doar în Wuhan. Alte recomandări includ spălarea frecventă a mâinilor </div>
+				<div> cu apă și săpun, fără a atinge ochii,nasul sau gura, cu excepția cazului în care mâinile sunt curate și acoperirea gurii când se tușește. Oamenii din zonele cu risc ridicat ar trebui </div>
+				<div>să ia măsuri de precauție suplimentare chiar și în jurul persoanelor care nu prezintă simptome.  
+				Creșterea capacității și adaptarea asistenței medicale la nevoile pacienților cu COV-19 </div>
+				<div>este descrisă de OMS ca o măsură fundamentală pentru a răspunde focarelor.</div>
+				
+				<span><b>Pentru mai multe informații privind răspândirea Coronavirusului accesați:</b>
+				<a target="_blank" href="https://ro.wikipedia.org/wiki/Pandemia_de_COVID-19"> ACEST LINK</a>
+				</span>
+				</td>
+				
+			</tr>	
+			<tr>
+				<td >
+					
+						Ați fost testat pozitiv?:                                                            
+						<input type="radio" name="test" value="0">da
+						<input type="radio" name="test" value="1">nu<br>
+						Ați stat in izolare?:                                                            
+						<input type="radio" name="izolare" value="0">da
+						<input type="radio" name="izolare" value="1">nu<br>
+						Dacă raspunsul la întrebarea precedentă este pozitiv, în ce perioadă?:                                                            
+						<input type="text" name="perioadaizolare" > <br>
+					
+						Ați avut contact cu persoane care au stat în izolare în ultimele 2 săptămâni?:                                                            
+						<input type="radio" name="intalniriinfectati" value="0">da
+						<input type="radio" name="intalniriinfectati" value="1">nu<br>
+						Ați avut unul din următoarele simptome ?:   <br>                                                         
+						<input type="checkbox" name="simptom" value="0" checked>lipsa gustului sau a mirosului<br>
+						<input type="checkbox" name="simptom" value="1">dureri în gât<br>
+						<input type="checkbox" name="simptom" value="2">tuse seacă<br>
+						<input type="checkbox" name="simptom" value="3">febră<br>
+							
+						Suferiți de boli infecțioase?:<br>
+						<select name="boli infectioase" size="2" > 
+							<option value="DA" selected> DA</option>
+							<option value="NU">NU</option>
+						
+						</select> <br>
+					     În incinta cabinetului stomatologic se respectă normele privind prevenirea COVID-19, și anume: <br>
+						<ol type="i" start="50">
+						<li>Cadrul medical este testat în fiecare săptămână</li>
+						<li>Fiecare pacient este testat înainte de a fi consultat</li>
+						<li>Înainte de intrarea în cabinetul stomatologic se trece la RECEPȚIE, unde:
+							<ol type="a">
+								<li> Se verifică temperatura fiecărui pacient</li>
+								<li> Fiecare pacient este rugat să se spele pe mâini pentru a se dezinfecta</li>
+						
+							</ol>
+						</li>
+						<li>În cazul în care o persoană din incinta cabinetului este depistată pozitiv, tot personalul va fi carantinat</li>
+						
+						</ol>
+				
+				
+				</td>
+				
+			</tr>
+			
+			
+					</table>
+			
+				</td>
+				
+			</tr>	
+			
+		</table>
+		 <!-- <table  style="padding:50px;border:3px solid;border-spacing:160px;" >  -->
+		  <table  > 
+		 <!-- <table  border="1" cellpadding="10" cellspacing="0" width="1500"> -->
+
+			<tr   >
+				<td colspan="2"   ><h2>FIȘA CLIENTULUI SCRISĂ DE MEDICUL STOMATOLOG
+				<img src="https://www.cristinaotel.ro/wp-content/uploads/2015/02/shutterstock_524678035-300x270.jpg" alt="photo"
+		title=" tooth" width="70" height="70" ></h2></td>
+				
+			</tr>	
+			<tr>
+				<td rowspan="3">Nume si prenume pacient:<input type="text" name="numePrenumePacient" maxlength="20"></td>
+					<td >Data consultului:<input type="text" name="dataConsult" maxlength="20"></td>
+			</tr>	
+				
+			<tr >
+			
+				<td ><b>Simptome ale pacientului:</b><br>
+				<ol type="1">
+						<li> <input type="checkbox" name="dureriDentareLaMasticatie" value="1">Dureri dentare la masticație </li>
+						<li> <input type="checkbox" name="dureriDeCap" value="1">Dureri de cap </li>
+						<li> <input type="checkbox" name="dureriDeGingie" value="1">Dureri de gingie</li>
+						
+				</ol>
+				<br>
+				Alte simptome:<br>
+				<input type="text" name="simptomeDinti"><br>
+				</td>
+			
+			</tr>
+			
+			
+			<tr>
+				<td >
+				<fieldset>
+					<legend><b>RECOMANDĂRI ȘI TRATAMENT:</b></legend> <br>
+				<textarea rows="10" name= "textRecomandari" cols="40" >
+				
+				</textarea><br>
+				<b>MEDICAMENTE PRESCRISE: </b>
+				<ol type="I">
+						<li>Nurofen </li>
+						<li>Antinevralgic </li>
+						<li>Algocalmin</li>
+						<li> <input type="text" name="med1" maxlength="20"></li>
+						<li> <input type="text" name="med2" maxlength="20"></li>
+						<li> <input type="text" name="med3" maxlength="20"></li>
+						<li> <input type="text" name="med4" maxlength="20"></li>
+						<li> <input type="text" name="med5" maxlength="20"></li>
+						
+				</ol>
+				
+				 </fieldset>
+				</td>
+				
+			</tr>
+		
+			<tr >
+				<td colspan="2">Lucrări efectuate și tratamente aplicate: <br>
+				<textarea rows="10" name= "textRecomandari" cols="40" >
+				
+				</textarea>
+				
+				</td>
+	
+			</tr>	
+			<tr>
+				<td colspan="2">
+					Submit:	<input type="submit" name="trimite"><br>
+				
+				
+				</td>
+	
+			</tr>
+				
+		</table>
+		</form>
+		
+		
+				
+
+	</body>
+</html>
