@@ -1,0 +1,29 @@
+
+
+.mainContent{
+	border:1px solid black;
+	width:fit-content;
+	/* le pune doua cate doua pe o linie auto auto, daca era auto auto auto erau cate 3 pe o linie*/
+	display:grid;
+	grid-template-columns: auto auto;
+}
+.imageContent{
+	margin:14px;
+	padding:14px;
+	background-color:#00FFFF;
+	height:170px;
+	width:150px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+
+}
+.image{
+	height:160px;
+	width:137px;
+}
+.title{
+	position:absolute;
+	bottom:1px;
+}
